@@ -1,0 +1,23 @@
+Performing dependent t-tests manually in R (2)
+100 XP
+
+Conducting a dependent t-test, also known as a paired t-test, requires:
+
+    defining your null and alternative hypotheses
+    calculating the degrees of freedom
+    deciding the significance level (α)
+    finding the critical value
+    calculating the t-value
+
+The confidence interval is calculated by means of the following formula:
+
+XD¯±tcrit∗sDn√
+, where tcrit is the critical t-value.
+
+Test the null hypothesis that the difference in intelligence gain between the post and pre training groups is equal to zero against the alternative hypothesis that there exists a significant difference between both groups at the 95% confidence level. Afterwards compute the confidence interval for the mean of the differences in intelligence gain between groups and Cohen's d.
+Instructions
+
+    Start the second part of your hypothesis test by calculating the observed t-value and saving it in the variable t_value. Afterwards compare it to the critical value t_crit you calculated in the previous exercise in order to test your null hypothesis. Finally, check for yourself whether or not the difference in mean between both groups is significant!
+    Calculate the confidence interval for the mean of the difference in score. Do not forget to print them out in order to take a look at them.
+    Calculate Cohen's d. The formula for Cohen's d is the mean difference divided by standard deviation.
+
