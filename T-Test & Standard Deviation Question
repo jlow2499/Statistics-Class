@@ -1,0 +1,27 @@
+erforming dependent t-tests manually in R (1)
+100 XP
+
+Conducting a dependent t-test, also known as a paired t-test, requires:
+
+    defining your null and alternative hypotheses
+    calculating the degrees of freedom
+    deciding the significance level α
+    finding the critical value
+    calculating the t-value
+
+The formula for the t-value is
+t=XD¯sD/n√
+, where XD¯ is the mean difference between the two groups, sD is the standard deviation of the mean difference and n is the sample size.
+
+The standard deviation is calculated as
+∑x2D−∑xD2nn−1−−−−−−−−−−−−√,
+where xD is the differences between scores.
+
+Before performing a two-tailed hypothesis test whether or not the difference between the post and pre training groups is significantly different from zero, you will start off easily by computing some preliminary steps in R. Use a significance level of 5 percent throughout this example.
+Instructions
+
+    Firstly, calculate the degrees of freedom for the t distribution on the basis of the sample size n. The R command to compute the sample size of the trained group is given as a present to you in the sample code.
+    Second, compute the critical t-value by using the function qt(alpha,df) in conjunction with the abs() function. Make sure to notice that you are dealing with a two-tailed hypothesis test! A two tailed hypothesis tests whether or not there is a difference between groups, but does not specify the direction of the effect. You can also find critical t-values by using “old school” t-tables, but R tends to have faster solutions to almost any problem.
+    Then, calculate the mean difference as defined above by summing up the differences by means of the sum() command and dividing by n.
+    Lastly, compute the standard deviation of the differences in scores as defined above and by using the variable n. Be aware of the brackets!
+
