@@ -1,0 +1,20 @@
+Conducting an independent t-test manually (2)
+100 XP
+
+In this exercise, you will perform an independent t-test manually in R the same way you reproduced the dependent t-test in the previous chapter. To this purpose, you will test whether or not the null hypothesis holds that the difference in intelligence score gain between the group that trained for 8 days and the group that trained for 19 days is equal to zero. If not, the null can be rejected in favour of the alternative hypothesis, which would imply a significance difference in intelligence gain between both training methods. Do this hypothesis test at the 95% confidence level (α=0,05)
+
+Calculation of an independent t-test is similar to calculating a dependent t-test but involves slightly different formulas. The formula for the t-value is
+t=XD¯/sE
+where XD¯ is the difference between the two group means and sE is the pooled standard error.
+
+The formula for Cohen's d for independent t-tests is
+Cohen′sd=XD¯/sD
+where XD¯ is the mean difference between the two groups and sD is the pooled standard deviance. The pooled standard deviation is
+(sd1+sd2)/2
+, where sd1 is the standard of the first group and sd2 is the standard deviance of the second group.
+Instructions
+
+    Calculate the t-statistic t_value for the hypothesis testing described above. Note that mean_diff and se_pooled are still loaded in your workspace.
+    Once the t-statistic has been calculated, use it to compute the p-value by using the function pt(x,df).
+    Calculate cohens_d. Use preliminary results for both standard deviations and the pooled standard deviation and save them respectively in variables sd_t08, sd_t19 and sd_pooled.
+
